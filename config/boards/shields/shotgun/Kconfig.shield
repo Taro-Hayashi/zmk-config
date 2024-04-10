@@ -1,5 +1,5 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_ARMORS
-   def_bool $(shields_list_contains,armors)
+config SHIELD_SHOTGUN
+   def_bool $(shields_list_contains,shotgun)
