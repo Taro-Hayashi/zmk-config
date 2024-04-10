@@ -1,0 +1,30 @@
+/*
+ * Copyright (c) 2022 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+                &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp GRAVE
+                &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp LSHFT
+            >;
+        };
+
+        fn {
+            bindings = <
+                &trans &trans &trans &trans &trans 
+                &trans &trans &trans &trans &trans &trans 
+                &trans &trans &trans &trans &trans &trans 
+            >;
+        };
+    };
+};
