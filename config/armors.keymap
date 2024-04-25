@@ -10,11 +10,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define FN 1
-
-#define FN_GRV &lt FN GRAVE
-
-
 
 / {
     keymap {
@@ -22,17 +17,9 @@
 
         default_layer {
             bindings = <
-                    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-                &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  FN_GRV
-                &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp LSHFT
-            >;
-        };
-
-        fn {
-            bindings = <
-                      &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2 &trans &bt BT_CLR
-                &kp A &trans &trans &trans &trans &trans 
-                &kp B &trans &trans &trans &trans &trans 
+                    &kp ESC  &kp F1  &kp F2  &kp F3  &kp F4
+                &kp LALT  &kp Q  &kp W  &kp E  &kp M  &kp F5
+                &kp LSHFT  &kp A  &kp S  &kp D  &kp SPACE  &kp I
             >;
         };
     };
